@@ -27,8 +27,8 @@ scanf("%d",&radius2);
 printf("\n plz Enter 2nd cylinder's hight. :- ");
 scanf("%d",&height2);
 
-area1 = 2 * 3.14 * radius1 * height1 + 2 * 3.14 * radius1 * 2;
-area2 = 2 * 3.14 * radius2 * height2 + 2 * 3.14 * radius2 * 2;
+(area1 = 2 * 3.14 * radius1 * height1) + (2 * 3.14 * radius1 * radius1);
+(area2 = 2 * 3.14 * radius2 * height2) + (2 * 3.14 * radius2 * radius2);
 
  if(area1 < area2)
 {
