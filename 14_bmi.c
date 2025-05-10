@@ -19,7 +19,7 @@ void main()
     scanf("\n%d",&foot);
     printf("inch :- ");
     scanf("%d",&inch);
-    inch_1= foot * 12 + ince;
+    inch_1= foot * 12 + inch;
     meter = inch_1 * 2.54 / 100;
     hight = meter;
     bmi = weight / (hight * hight);
@@ -39,9 +39,9 @@ void main()
     else if (bmi >= 30)
     {
          printf("\nthe weight is the normal");
-    }
-        printf("\nobese");
     
+        printf("\nobese");
+    }
     else if(bmi>=24.9)
     {
         printf("\nover obese");
