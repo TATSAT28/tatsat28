@@ -1,20 +1,32 @@
-/* THE write a program to write number from 1,2,3,4..............100 in is sequence
-   1 creat the veriable in nub
-   2 then diplay the frist nub
-   3  nub = nub + 1 
-   diplay the nub
-   diplay the nice try
+/*
+   the write a program to calclate compound interest from the amout interest and year give by the use 
+
+   1   the creat veribal amonut,interest,yeaer
+   2  plz enter the input from user 
+   3  interest from 1 year
+   4  interest = (amount * rate*1)/100   
+   5  cleclat the amount
+   amount = amount + intrest
+   diplay nice tryy   
 
 */
- #include<stdio.h>
- void main ()
- {
-        int number = 1;
-    while(number <= 100)  
+#include<stdio.h>
+void main ()
+{
+    float rate,amount,interest;
+    int year,count;
+    printf("plz enter amount");
+    scanf("%f",&amount);
+    printf("plz enter rate");
+    scanf("%f",&rate);
+    printf("plz enter the year");
+    scanf ("%d",&year);
+    count = 1;
+    while (count<=year)
     {
-        printf("%d ", number); 
-        number = number + 1; 
+         interest = (amount*rate*1)/100;
+         amount = amount + interest;
+         count = count + 1;
     }
-    printf("\n nice");
+     printf("interest = %f amount = %f",interest,amount);
 }
- 
